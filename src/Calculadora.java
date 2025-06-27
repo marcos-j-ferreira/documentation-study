@@ -8,8 +8,9 @@
  * @param {number} y - Segundo número
  * @return {number} Resultado da operação 
  */
+package src;
 
-class Calculadora{
+public class Calculadora{
 
     public final double somar(double x, double y){return x + y; }
 

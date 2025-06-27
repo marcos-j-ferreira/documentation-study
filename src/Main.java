@@ -6,6 +6,7 @@
  *  - exibi o resultado das quatro operações de forma organizada.
  */
 
+package src;
 
 public class Main{
 

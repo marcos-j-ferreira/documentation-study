@@ -1,0 +1,7 @@
+<dependencies>
+    <dependency>
+        <groupId>nothing</groupId>
+        <artifactId>nothing</artifactId>
+        <version>1.0</version>
+    </dependency>
+</dependencies>
