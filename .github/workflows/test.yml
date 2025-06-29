@@ -1,22 +1,23 @@
-name: Run Tests
+name: Java CI
 
 on: [push, pull_request]
 
 jobs:
   test:
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v3
         with:
-          node-version: '20' 
+          java-version: '17'  
+          distribution: 'temurin'  
 
-      - name: Install dependencies
-        run: npm install
+      - name: Compile Java files
+        run: javac src/Calculadora.java Teste.java
 
-      - name: Run tests
-        run: npm test
+      - name: Run manual test
+        run: java Teste
